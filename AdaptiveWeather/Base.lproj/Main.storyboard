@@ -23,28 +23,22 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NrO-Fw-ldf" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HMA-Zv-cnv">
-                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact" misplaced="YES">
-                                            <rect key="frame" x="-156" y="10" width="613" height="177"/>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
-                                        </variation>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oNo-6Z-IJy">
                                         <rect key="frame" x="73" y="68" width="454" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact" misplaced="YES">
-                                            <rect key="frame" x="-77" y="85" width="454" height="295"/>
-                                        </variation>
                                         <variation key="widthClass=compact">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HMA-Zv-cnv">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -52,11 +46,15 @@
                                 <constraints>
                                     <constraint firstItem="oNo-6Z-IJy" firstAttribute="width" secondItem="NrO-Fw-ldf" secondAttribute="width" id="3Ew-H7-dFE"/>
                                     <constraint firstItem="oNo-6Z-IJy" firstAttribute="top" secondItem="NrO-Fw-ldf" secondAttribute="top" constant="10" id="7eW-yB-8kj"/>
-                                    <constraint firstItem="HMA-Zv-cnv" firstAttribute="top" secondItem="NrO-Fw-ldf" secondAttribute="top" constant="10" id="D3E-ID-mlS"/>
+                                    <constraint firstItem="HMA-Zv-cnv" firstAttribute="top" secondItem="NrO-Fw-ldf" secondAttribute="top" constant="10" id="D3E-ID-mlS">
+                                        <variation key="heightClass=compact" constant="0.0"/>
+                                    </constraint>
                                     <constraint firstAttribute="centerX" secondItem="oNo-6Z-IJy" secondAttribute="centerX" id="Lif-Qi-hOA"/>
                                     <constraint firstAttribute="width" secondItem="HMA-Zv-cnv" secondAttribute="width" id="Onj-M1-KV2"/>
                                     <constraint firstAttribute="bottom" secondItem="oNo-6Z-IJy" secondAttribute="bottom" id="aEl-XF-gGG"/>
-                                    <constraint firstAttribute="centerX" secondItem="HMA-Zv-cnv" secondAttribute="centerX" id="dVZ-sR-9Ix"/>
+                                    <constraint firstAttribute="centerX" secondItem="HMA-Zv-cnv" secondAttribute="centerX" id="dVZ-sR-9Ix">
+                                        <variation key="heightClass=compact" constant="8"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
